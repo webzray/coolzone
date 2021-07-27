@@ -5305,3 +5305,6 @@ body.dsn-show-contact .contact-modal {
   bottom: -120px;
 }
 
+.span{
+   pointer-events:none;
+}
