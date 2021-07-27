@@ -5305,6 +5305,14 @@ body.dsn-show-contact .contact-modal {
   bottom: -120px;
 }
 
-.span{
-   pointer-events:none;
+.ceotab{
+  margin-left: 20em;
 }
+
+@media only screen and (max-width: 775px) {
+  .ceotab{
+    margin-left: unset;
+  }
+
+}
+
