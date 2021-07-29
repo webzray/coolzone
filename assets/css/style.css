@@ -1,12 +1,6 @@
 @charset "UTF-8";
 /*-----------------------------------------------------------
 
-  Template Name: Droow - Ajax Portfolio Showcase HTML Template
-  Template URI: http://theme.dsngrid.com/droow
-  Description: Droow Ajax Portfolio Showcase HTML Template
-  Author: design_grid
-  Author URI: https://themeforest.net/user/design_grid
-  Version: 1.0.0
 
 -------------------------------------------------------------*/
 /*-----------------------------------------------------------
@@ -5303,4 +5297,116 @@ body.dsn-show-contact .contact-modal {
 
 .box-seat .pro-text {
   bottom: -120px;
+}
+
+.ceotab{
+  margin-left: 20em;
+}
+
+@media only screen and (max-width: 775px) {
+  .ceotab{
+    margin-left: unset;
+  }
+
+}
+
+
+
+.video-wrap {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.video-wrap::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.28;
+ 
+  
+}
+
+.video-wrap::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 15px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+ 
+}
+
+.video-content {
+  position: relative;
+  z-index: 1;
+}
+
+.video-content h5 {
+ 
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+/* Vidoe Play */
+.video-play {
+  width: 60px;
+  height: 60px;
+  font-size: 23px;
+  line-height: 60px;
+  text-align: center;
+  position: relative;
+  border-radius: 50%;
+  background: #ee3163;
+  display: inline-block;
+  box-shadow: 0 0 0 0 rgba(238, 49, 99, 0.7);
+  -webkit-animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+
+
+.video-play:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  border-radius: 50%;
+  background: #ee3163;
+  transform: scale(1.3);
+  box-shadow: 0 0 0 0 rgba(238, 49, 99, 0.7);
+  -webkit-animation: pulse 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.video-play i {
+  margin-left: 5px;
+  position: relative;
+  z-index: 5;
+}
+
+/*video play button animation*/
+@-webkit-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 45px transparent;
+  }
+}
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 45px transparent;
+  }
 }
