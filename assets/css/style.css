@@ -119,6 +119,17 @@ body, .main-root {
   color: var(--font-color);
 }
 
+.btn-send {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  background-color: grey;
+}
+
+.btn-send:hover{
+  background-color: purple;
+}
 .main-root {
   position: relative;
 }

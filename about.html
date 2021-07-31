@@ -13,6 +13,8 @@
     <title>CoolZone Entertainers</title>
 
     <!-- Font Google -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -128,6 +130,10 @@
                                 <a href="#" class="link-hover">077 790 1935</a>
                             </p>
                             <p class="links  over-hidden">
+                                <a href="#" class="link-hover">
+                                    contact@coolzoneentertainers.lk</a>
+                            </p>
+                            <p class="links  over-hidden">
                                 <a href="#"  class="link-hover">
                                     serulw@yahoo.com</a>
                             </p>
@@ -141,6 +147,9 @@
                                 <li>
                                     <a href="https://www.facebook.com/Coolzoneevents/?ref=page_internal" target="_blank" rel="nofollow">Facebook
                                         <div class="icon-circle"></div>
+                                    </a>
+                                    <a href="https://instagram.com/coolzoneevents" target="_blank" rel="nofollow">Instagram
+                                        <div class="icon-circle"></div> 
                                     </a>
                                 </li>
                                <!-- <li>
@@ -939,6 +948,7 @@
         <div class="contact-btn">
             <div class="contact-btn-txt">Contact</div>
         </div>
+        
         <div class="contact-modal background-section">
             <div class="contact-container h-100 w-100  border-right">
                 <div class="box-contact-inner section-padding ">
@@ -958,49 +968,99 @@
                                         Get in Touch
                                     </h2>
                                 </div>
+                                <form id="contact-form" class="form" method="post" action="contact.html"
+                                            data-toggle="validator" style="display: none;">
+                                            <div class="messages"></div>
+                                            <div class="input__wrap controls">
+                                                <div class="form-group">
+                                                    <div class="entry-box">
+                                                        <label>Your name *</label>
+                                                        <input id="form_name" type="text" name="name"
+                                                            placeholder="Type your name" required="required"
+                                                            data-error="name is required.">
+                                                    </div>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
 
-                                <form id="contact-form" class="form" method="post" action="contact.php"
-                                    data-toggle="validator">
+                                                <div class="form-group">
+                                                    <div class="entry-box">
+                                                        <label>Your E-Mail *</label>
+                                                        <input id="form_email" type="email" name="email"
+                                                            placeholder="Type your Email Address" required="required"
+                                                            data-error="Valid email is required.">
+                                                    </div>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="entry-box">
+                                                        <label>What's up?</label>
+                                                        <textarea id="form_message" class="form-control" name="message"
+                                                            placeholder="Tell us about you and the world"
+                                                            required="required"
+                                                            data-error="Please,leave us a message."></textarea>
+                                                    </div>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <input type="submit" name="ok" class="btn btn-success btn-send" value="Send message">
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                <form id="contact-form" method="post" role="form" action="function.php">
+
                                     <div class="messages"></div>
-                                    <div class="input__wrap controls">
-                                        <div class="form-group">
-                                            <div class="entry-box">
-                                                <label>Your name *</label>
-                                                <input id="form_name" type="text" name="name"
-                                                    placeholder="Type your name" required="required"
-                                                    data-error="name is required." />
+            
+                                    <div class="controls">
+            
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_name">Name *</label>
+                                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required" data-error="Name is required.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
                                             </div>
-                                            <div class="help-block with-errors"></div>
+                                            
                                         </div>
-
-                                        <div class="form-group">
-                                            <div class="entry-box">
-                                                <label>Your E-Mail *</label>
-                                                <input id="form_email" type="email" name="email"
-                                                    placeholder="Type your Email Address" required="required"
-                                                    data-error="Valid email is required." />
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_email">Email *</label>
+                                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
                                             </div>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="entry-box">
-                                                <label>What's up?</label>
-                                                <textarea id="form_message" class="form-control" name="message"
-                                                    placeholder="Tell us about you and the world" required="required"
-                                                    data-error="Please,leave us a message."></textarea>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_phone">Phone</label>
+                                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
                                             </div>
-                                            <div class="help-block with-errors"></div>
                                         </div>
-
-                                        <div class="text-right">
-                                            <div class="image-zoom w-auto d-inline-block" data-dsn="parallax">
-                                                <input type="submit" value="Send Message"
-                                                    class="dsn-button background-main border-radius">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="form_message">Message *</label>
+                                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <input type="submit" name="ok" class="btn btn-success btn-send" value="Send message">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="text-muted"><strong>*</strong> These fields are required.</p>
                                             </div>
                                         </div>
                                     </div>
-                                </form>
+            
+                                </form> 
                             </div>
                         </div>
 
@@ -1010,8 +1070,12 @@
                                     <li>
                                         <h5 class="title-block mb-15">Contact</h5>
                                         <p class="text-p">077 790 1935</p>
+                                        <p class="links  over-hidden">
+                                            <a href="#" class="link-hover">
+                                                contact@coolzoneentertainers.lk</a>
+                                        </p>
                                         <div class="over-hidden mt-5">
-                                            <a class="link-hover" data-hover-text="info@example.com"
+                                            <a class="link-hover" 
                                                 href="#">serulw@yahoo.com</a>
                                         </div>
 
@@ -1023,10 +1087,15 @@
                                     </li>
                                     <li>
                                         <h5 class="title-block mb-15">Follow</h5>
+                                        
                                         <div class="social-item over-hidden">
                                             <a href="https://www.facebook.com/Coolzoneevents/?ref=page_internal" target="_blank"
                                                 rel="nofollow"> <span><img src="assets/img/logo/fb.png" style="height: 2em; width: 2em;" alt=""></span> <br>  Facebook</a>
+                                                <a href="https://instagram.com/coolzoneevents" target="_blank"
+                                                rel="nofollow"> <span><img src="assets/img/logo/insta.png" style="height: 2em; width: 2em;" alt=""></span> <br>  Instagram</a>
                                         </div>
+
+                                        
                                         
                                     </li>
                                 </ul>
