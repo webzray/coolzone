@@ -1263,7 +1263,7 @@ body:not(.v-dark) .site-header .main-logo .dark-logo {
   margin-bottom: 5px;
 }
 .site-header .container-content .nav-content p .link-hover {
-  text-transform: uppercase;
+  text-transform: none;
 }
 .site-header .container-content .title-line,
 .site-header .container-content p.title-line {
@@ -4786,7 +4786,7 @@ label {
 }
 .box-info-contact ul li a {
   display: block;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .box-info-contact ul li .social-item:not(:last-of-type) {
   margin-bottom: 10px;
