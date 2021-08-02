@@ -1095,8 +1095,8 @@ body:not(.v-dark) .site-header .main-logo .dark-logo {
 }
 .site-header .menu-icon .icon-m .menu-icon-line {
   background-color: var(--theme-color);
-  width: 23px;
-  height: 2px;
+  width: 30px;
+  height: 5px;
   -webkit-transition: -webkit-transform 0.2s ease-Out;
   transition: -webkit-transform 0.2s ease-Out;
   -o-transition: transform 0.2s ease-Out;
@@ -1127,10 +1127,10 @@ body:not(.v-dark) .site-header .main-logo .dark-logo {
 }
 .site-header .menu-icon .text-menu {
   top: -4px;
-  width: 45px;
+  width: 90px;
   color: var(--heading-color);
   opacity: 0.9;
-  font-size: 13px;
+  font-size: 25px;
   font-weight: 600;
 }
 .site-header .menu-icon .text-menu > div {
@@ -1193,7 +1193,7 @@ body:not(.v-dark) .site-header .main-logo .dark-logo {
           transition-delay: calc(30ms * var(--char-dsn-index) + 1ms);
 }
 .site-header .menu-icon.nav-active .text-menu {
-  width: 50px;
+  width: 90px;
 }
 .site-header .menu-icon:hover .icon-m .icon-top,
 .site-header .menu-icon:hover .icon-m .icon-center {
